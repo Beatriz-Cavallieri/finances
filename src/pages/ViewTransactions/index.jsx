@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getLocalStorageData } from '../../functions/getLocalStorageTransactions'
-import Table from '../../components/Table'
+import Table from './parts/Table'
 import './styles.css'
 import Modal from '../../components/Modal'
 import { FilterProvider } from './parts/context'

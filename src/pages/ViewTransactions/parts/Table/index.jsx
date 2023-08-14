@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css'
-import { formatCurrency } from '../../functions/formatCurrency'
+import { formatCurrency } from '../../../../functions/formatCurrency'
+import {TRANSACTION_TYPE_LABELS} from '../../utils'
 
 const Table = (props) => {
     const summary = props.transactions.reduce((total, transaction) => {
@@ -34,7 +35,7 @@ const Table = (props) => {
                 {props.transactions.map((transaction, index) => (
                     <tr key={index}>
                         <td>{transaction.name}</td>
-                        <td>{transaction.transactionType}</td>
+                        <td>{TRANSACTION_TYPE_LABELS[transaction.transactionType]}</td>
                         <td>{transaction.category}</td>
                         <td className={transaction.transactionType}>{formatCurrency(transaction.value)}</td>
                         <td>{transaction.timestamp}</td>
