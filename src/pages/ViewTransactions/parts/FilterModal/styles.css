@@ -1,0 +1,13 @@
+.filterModalContent, .filterModalFooter {
+    display: flex;
+    gap: 1rem;
+}
+
+.filterModalContent {
+    flex-direction: column;
+}
+
+.filterModalFooter {
+    flex-direction: row;
+    margin: 1rem 0;
+}
