@@ -44,14 +44,12 @@ const TransactionForm = () => {
 
         const updatedTransactions = [...storedTransactions, transactionEntry]
         setStoredTransactions(updatedTransactions)
-        console.log(JSON.stringify(updatedTransactions))
         localStorage.setItem(dataKey, JSON.stringify(updatedTransactions))
     }
 
     useEffect(() => {
         const data = getLocalStorageData(dataKey)
         if (data) {
-            console.log(data)
             setStoredTransactions(data)
         }
         else setStoredTransactions([])

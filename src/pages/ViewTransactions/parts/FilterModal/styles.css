@@ -11,3 +11,7 @@
     flex-direction: row;
     margin: 1rem 0;
 }
+
+.filterButton {
+    background-color: var(--blue-700);
+}
