@@ -5,6 +5,12 @@ import { formatCurrency } from '../../functions/formatCurrency'
 const Input = (props) => {
   const [formattedValue, setFormattedValue] = useState('0,00')
   const handleNumber = (value) => {
+  //   const numericValue = parseFloat(value.replace(/[^\d]/g, '')) / 100
+  // }
+  // if (!isNaN(numericValue)) {
+  //   const formatted = formatCurrency(numericValue)
+
+  //   setFormattedValue(formatted)
   }
 
   const handleChange = (event) => {

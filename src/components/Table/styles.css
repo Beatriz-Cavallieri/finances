@@ -1,0 +1,50 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--border-radius-regular);
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--grey-900);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--grey-600);
+    color: var(--white);
+}
+
+tbody tr {
+    background-color: var(--grey-900);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--grey-800);
+}
+
+tbody tr:hover {
+    background-color: var(--grey-500);
+}
+
+tbody tr.summaryRow {
+    background-color: var(--grey-600);
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+.income,
+.expense {
+    font-weight: 700;
+}
+
+.income {
+    color: var(--green);
+}
+
+.expense {
+    color: var(--red);
+}
