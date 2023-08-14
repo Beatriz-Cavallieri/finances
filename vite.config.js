@@ -7,10 +7,10 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Pasta de saída desejada
   },
-  server: {
-    proxy: {
-      '/': 'https://beatriz-cavallieri-finances.netlify.app',
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     '/': 'https://beatriz-cavallieri-finances.netlify.app',
+  //   },
+  // },
 })
 
