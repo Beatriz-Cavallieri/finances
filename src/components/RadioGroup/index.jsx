@@ -14,6 +14,7 @@ const RadioGroup = (props) => {
                 name={props.name}
                 id={props.name}
                 onChange={props.onChange}
+                checked={props.value === input.value}
             />
                 )}
         </div>
