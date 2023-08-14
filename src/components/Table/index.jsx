@@ -4,8 +4,18 @@ import { formatCurrency } from '../../functions/formatCurrency'
 
 const Table = (props) => {
     const summary = props.transactions.reduce((total, transaction) => {
-        if (transaction.transactionType === 'income') return total + transaction.value
-        if (transaction.transactionType === 'expense') return total - transaction.value
+        if (!transaction.value) {
+            console.error('Transação inválida:', transaction)
+            return total
+        }
+        const transactionValue = parseFloat(transaction.value)
+
+        if (isNaN(transactionValue)) {
+            console.error('Valor de transação inválido:', transactionValue)
+            return total
+        }
+        if (transaction.transactionType === 'income') return total + transactionValue
+        if (transaction.transactionType === 'expense') return total - transactionValue
         return total
     }, 0)
 
