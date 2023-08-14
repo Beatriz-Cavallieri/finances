@@ -3,7 +3,6 @@ import './styles.css'
 import RadioInput from '../RadioInput'
 
 const RadioGroup = (props) => {
-    const [checkedOption, setCheckedOption] = useState(undefined)
     return (
         <div className='radioGroupWrapper'>
             <label>{props.label}</label>

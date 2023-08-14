@@ -1,20 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './styles.css'
-import { formatCurrency } from '../../functions/formatCurrency'
 
 const Input = (props) => {
-  const [formattedValue, setFormattedValue] = useState('0,00')
-  const handleNumber = (value) => {
-  //   const numericValue = parseFloat(value.replace(/[^\d]/g, '')) / 100
-  // }
-  // if (!isNaN(numericValue)) {
-  //   const formatted = formatCurrency(numericValue)
-
-  //   setFormattedValue(formatted)
-  }
-
+  
   const handleChange = (event) => {
-    if (props.type = "number") handleNumber(event.target.value)
     props.onChange(event)
   }
 
