@@ -5,3 +5,9 @@
     box-shadow: 0 4px 6px var(--grey-900);
     background-color: var(--grey-600);
 }
+
+.filterButtonContainer {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+}

@@ -24,7 +24,9 @@ const ViewTransactions = () => {
         <FilterProvider>
             <FilterModal isOpen={isModalOpen} onClose={closeModal} />
             <h1>Transações cadastradas</h1>
-            <button type='button' onClick={openModal}>Filtrar</button>
+            <div className='filterButtonContainer'>
+                <button type='button' onClick={openModal} >Filtrar transações</button>
+            </div>
             <FilteredTable transactions={storedTransactions} />
         </FilterProvider>
     )

@@ -1,5 +1,4 @@
 import React from 'react'
-import Home from './pages/Home'
 import TransactionForm from './pages/TransactionForm'
 import ViewTransactions from './pages/ViewTransactions'
 import {
@@ -14,7 +13,7 @@ export const routeNames = {
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <ViewTransactions/>,
   },
   {
     path: routeNames.createTransaction,

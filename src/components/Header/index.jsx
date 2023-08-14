@@ -9,7 +9,6 @@ const Header = () => {
       <p className='headerTitle'>Finanças</p>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
           <li><a href={routeNames.viewTransactions}>Tabela de Transações</a></li>
           <li><a href={routeNames.createTransaction}>Criar Transação</a></li>
         </ul>
