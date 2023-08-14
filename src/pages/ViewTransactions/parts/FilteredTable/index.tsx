@@ -10,9 +10,6 @@ const FilteredTable = (props) => {
     if (transactionType === "income" && transaction.transactionType !== "income") return false
     if (transactionType === "expense" && transaction.transactionType !== "expense") return false
     if (category.length) {
-      console.log(transaction.category.toLowerCase())
-      console.log(category.toLowerCase())
-      console.log('=====')
       if (transaction.category.toLowerCase().includes(category.toLowerCase())) return true
       return false
     }
