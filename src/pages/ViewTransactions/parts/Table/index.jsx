@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import { formatCurrency } from '../../functions/formatCurrency'
+import { formatCurrency } from '../../../../functions/formatCurrency'
 
 const Table = (props) => {
     const summary = props.transactions.reduce((total, transaction) => {
