@@ -5,12 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Pasta de saída desejada
+    outDir: 'dist',
   },
-  // server: {
-  //   proxy: {
-  //     '/': 'https://beatriz-cavallieri-finances.netlify.app',
-  //   },
-  // },
+  server: {
+    proxy: {
+      '/': 'https://beatriz-cavallieri-finances.netlify.app',
+    },
+  },
 })
 
